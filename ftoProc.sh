@@ -39,10 +39,8 @@ _CommentBegin_
 _CommentEnd_
 
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
-# {{{ DBLOCK-leavesList
 leavesList="
 "
-# }}} DBLOCK-leavesList
 ####+END:
 
 
@@ -55,15 +53,15 @@ _CommentEnd_
 #
 
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
-# {{{ DBLOCK-nodesList
 nodesList="
-microsoftWindows
-_nodeBase_
-printing
 android
 imaging
+_nodeBase_
+cygwin
+microsoftWindows
+printing
+chromeBook
 "
-# }}} DBLOCK-nodesList
 ####+END:
 
 ####+BEGINNOT: bx:dblock:ploneProc:bash:nodesList :types ""
