@@ -1,0 +1,423 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: microsoftWindows/dualBoot-Win11-Deb13
+#+roam_tags: branch
+#+roam_key: bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13
+[[roam:bisos-periphery/microsoftWindows]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]] [[elisp:(call-interactively 'b:rg:panels/all)][rg:panels/all]]  [[elisp:(org-cycle)][| ]]
+**  RipGrep:: [[elisp:(rg-menu)][rg-menu]] ||
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   bisos--~Node:: bisos-periphery/microsoftWindows -- dualBoot-Win11-Deb13~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_")][ =dualBoot-Win11-Deb13= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/microsoftWindows/outlook/_nodeBase_")][ =outlook= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-periphery/microsoftWindows/_nodeBase_")][ =microsoftWindows= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-periphery/_nodeBase_")][ =bisos-periphery= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview and Use Cases" :anchor "Panel" :extraInfo "  /Windows 11 + Debian 13/"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview and Use Cases:* |]] <<Panel>>   /Windows 11 + Debian 13/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+This panel describes how to add =Debian 13 (Trixie)= to a machine that *already runs Windows 11*,
+producing a dual-boot system where both operating systems share a single disk and you choose
+between them at power-on via the GRUB boot menu.
+
+*Use case:* Keep an intact, working Windows 11 installation while gaining a full Debian 13 system
+on the same laptop or desktop --- selecting either OS at boot. This is the common single-disk case.
+
+*Scope of this guide:*
+- Starting state :: Windows 11 already installed and bootable in UEFI mode.
+- Disk layout    :: One physical disk; we shrink Windows to free space, then install Debian into it.
+- Result         :: GRUB (installed by Debian) presents a boot menu listing both Debian 13 and Windows 11.
+
+/NOTE: This is a starting-point draft. Review and verify each step against your specific hardware
+before relying on it. Partitioning operations can destroy data --- see Step 0./
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Relevant Resources and Pointer" :anchor "" :extraInfo "URLs, Links"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Relevant Resources and Pointer:* |]]  URLs, Links  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-13.4.0-amd64-DVD-1.iso
+- https://linuxblog.io/dual-boot-linux-windows-install-guide/
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Verifications and Dates of Verifications" :anchor "" :extraInfo "Hardware Used"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Verifications and Dates of Verifications:* |]]  Hardware Used  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- <2026-06-29 Mon 22:20>  Mohsen created a dual boot system
+  Dell Tower Plus 2026 EBT 2250
+  SSD 2TB -- 200 Gig Win  -- 1.8TB Deb-13  --- Windows and BIOS the *RAID On -> AHCI* switch
+
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Prerequisites and Assumptions" :anchor "" :extraInfo "UEFI -- Secure Boot -- TPM 2.0"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Prerequisites and Assumptions:* |]]  UEFI -- Secure Boot -- TPM 2.0  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- Firmware is *UEFI* (not legacy BIOS / CSM). Windows 11 already requires this.
+- *Secure Boot* may stay *enabled* --- Debian ships a signed shim and boots fine with Secure Boot on.
+- *TPM 2.0* is present (a Windows 11 requirement); it does not affect Debian.
+  - /TPM (Trusted Platform Module) 2.0 is a small security chip on the motherboard that stores
+    encryption keys, passwords and certificates in tamper-resistant hardware. Windows 11 requires
+    it, and features such as BitLocker use it./
+- A USB flash drive of at least 4 GB for the Debian installer (its contents will be erased).
+- At least ~60 GB of free space that can be freed from the Windows partition for Debian.
+- A wired or wireless network connection for the Debian installer.
+- The Windows *BitLocker recovery key* is known/saved (if BitLocker is enabled) --- see Step 1.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 0 -- Back Up Everything First" :anchor "" :extraInfo "Critical -- do not skip"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 0 -- Back Up Everything First:* |]]  Critical -- do not skip  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Repartitioning a live disk always carries a risk of data loss. Before proceeding:
+
+- Back up all important Windows data to an external drive or cloud.
+- Note your Windows product activation is tied to hardware/Microsoft account (no key needed normally).
+- Locate your *BitLocker recovery key* (Microsoft account at https://account.microsoft.com/devices
+  or your organization's portal). Changing the boot configuration can trigger a recovery prompt.
+- Optionally create a Windows recovery USB.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 1 -- Prepare Windows 11" :anchor "" :extraInfo "In Windows -- Fast Startup, BitLocker"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 1 -- Prepare Windows 11:* |]]  In Windows -- Fast Startup, BitLocker  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Do the following from within Windows 11:
+
+Several steps below need an *elevated PowerShell* (PowerShell running with Administrator rights).
+To open one: right-click the *Start* button, choose *Terminal (Admin)*, and approve the User
+Account Control prompt.
+
+1. *Fully update Windows* (Settings -> Windows Update) and reboot, so no pending updates remain.
+
+2. *Disable Fast Startup.* Control Panel -> Hardware and Sound -> Power Options ->
+   "Choose what the power buttons do" -> "Change settings that are currently unavailable" ->
+   uncheck *Turn on fast startup* -> Save changes.
+   - Why: Fast Startup leaves the NTFS filesystem in a hibernated state. Accessing it from Linux
+     can corrupt it, and it interferes with a clean shutdown needed for dual boot.
+
+3. *Suspend or turn off drive encryption* before repartitioning (re-enable afterward).
+   /BitLocker is the Windows full-disk encryption feature: it encrypts the system drive so its
+   contents are unreadable without the key, which is normally sealed in the TPM. Repartitioning or
+   boot changes can make it demand the recovery key at the next boot, so suspend it beforehand./
+
+   First check the current state:
+
+#+begin_example
+# In the elevated PowerShell:
+manage-bde -status C:
+#+end_example
+
+   - If it reports *Conversion Status: Fully Decrypted* and *Protection Status: Protection Off*, the
+     drive is not encrypted --- there is nothing to suspend; continue to step 4.
+
+   - *Windows 11 Pro / Enterprise / Education* (full BitLocker) --- suspend protection.
+     =-RebootCount 0= keeps it suspended until you explicitly turn it back on:
+
+#+begin_example
+# In the elevated PowerShell:
+manage-bde -protectors -disable C: -RebootCount 0
+#+end_example
+
+   - *Windows 11 Home* (Device Encryption) --- =manage-bde= cannot manage protectors on Home and
+     fails with =0x8031005a "This version of Windows does not support this feature of BitLocker
+     Drive Encryption"=. Turn encryption off in the GUI instead:
+     Settings -> Privacy & security -> Device encryption -> toggle *Device encryption* *Off*, then
+     wait for the drive to finish decrypting. (If there is no "Device encryption" entry, the device
+     is not encrypted --- nothing to do.)
+
+   - Why: partition/boot changes can otherwise force a BitLocker recovery-key prompt at next boot.
+   - Re-enable encryption after the dual-boot setup is complete.
+
+4. *Disable hibernation* (frees the hiberfil.sys and helps the shrink in Step 2):
+
+#+begin_example
+# In the elevated PowerShell:
+powercfg /h off
+#+end_example
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 2 -- Shrink the Windows Partition" :anchor "" :extraInfo "In Windows -- Disk Management"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 2 -- Shrink the Windows Partition:* |]]  In Windows -- Disk Management  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Free space for Debian using the Windows tool (safer than shrinking NTFS from Linux):
+
+1. Press =Win+X= -> *Disk Management* (or run =diskmgmt.msc=).
+2. Right-click the Windows =(C:)= volume -> *Shrink Volume*.
+3. Enter the amount to shrink, in MB (e.g. =60000= for ~60 GB; more if you can spare it).
+4. Click *Shrink*. *Leave the freed space as "Unallocated"* --- the Debian installer will use it.
+
+*How much to keep for Windows:* Windows 11 has a minimum storage requirement of *64 GB*. A good
+approach is to keep the Windows =(C:)= partition at about that minimal size --- shrink it toward
+~64 GB --- and hand the freed remainder to Debian. (Keep some headroom above 64 GB if you will use
+Windows actively; never shrink =(C:)= below 64 GB.)
+
+If Windows limits how much you can shrink (due to immovable files):
+- Ensure hibernation is off (Step 1.4) and temporarily disable the page file
+  (System Properties -> Advanced -> Performance -> Virtual memory -> No paging file), reboot.
+- Optionally run the built-in Defragment and Optimize Drives, then retry the shrink.
+- Re-enable the page file afterward if you disabled it.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 3 -- Create the Debian 13 Installer USB" :anchor "" :extraInfo "Download -- verify -- write"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 3 -- Create the Debian 13 Installer USB:* |]]  Download -- verify -- write  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+1. Download the Debian 13 (Trixie) =amd64= installer ISO (the =netinst= image is sufficient)
+   from https://www.debian.org/ .
+
+2. *Verify the download* against the published checksums (=SHA256SUMS=) from the same mirror:
+
+#+begin_example
+sha256sum debian-13.x.0-amd64-netinst.iso
+# Compare the output against the matching line in SHA256SUMS
+#+end_example
+
+3. *Write the ISO to the USB stick.*
+
+   On Linux --- identify the device carefully (=lsblk=); writing to the wrong device destroys data:
+
+#+begin_example
+lsblk
+sudo dd if=debian-13.x.0-amd64-netinst.iso of=/dev/sdX bs=4M status=progress oflag=sync
+#+end_example
+
+   On Windows --- use *Rufus* or *balenaEtcher*, selecting GPT / UEFI target mode.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 4 -- Firmware / UEFI Settings" :anchor "" :extraInfo "Shut down -- boot order -- Secure Boot"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 4 -- Firmware / UEFI Settings:* |]]  Shut down -- boot order -- Secure Boot  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+1. *Fully shut down Windows.* Click *Start* -> the *Power* button -> *Shut down* (use *Shut down*,
+   not *Restart* or *Sleep*). Because Fast Startup was disabled in Step 1, this is now a true,
+   complete shutdown.
+   - Equivalently, from the elevated PowerShell: =shutdown /s /t 0=.
+2. Insert the Debian USB stick (if not already inserted) and power the machine back on.
+3. Enter UEFI firmware setup (or the one-time boot menu) by *tapping the vendor key repeatedly*
+   --- about once or twice per second --- the instant you power on, before the logo appears. A
+   single press usually misses the window. Common keys:
+   - *Dell* :: =F12= for the one-time boot menu (which also has a "BIOS Setup" entry), or =F2=
+     for BIOS/UEFI setup directly.
+   - *HP* :: =F9= for the boot menu, or =Esc= / =F10= for setup.
+   - *Others* :: commonly =F2=, =F12=, =Del=, or =Esc= --- watch the brief on-screen prompt.
+   - Tip: use a *wired USB keyboard in a rear (motherboard) port* --- hubs, front-panel ports and
+     wireless keyboards are often not active early enough to register the key.
+   - If the keys never catch, boot into firmware from Windows: Settings -> System -> Recovery ->
+     Advanced startup -> *Restart now* -> Troubleshoot -> Advanced options -> *UEFI Firmware Settings*.
+4. Confirm the firmware is in *UEFI mode* (disable Legacy/CSM if present).
+   - On Intel-based machines (common on recent *Dell*), also check *SATA Operation*. If it is set
+     to *RAID On* (Intel RST / VMD), the Debian installer will not see the disk; it must be *AHCI*.
+     This applies *even to a single NVMe SSD with no RAID array* --- "RAID On" is a controller
+     *mode* (it routes the drive through Intel's Volume Management Device), not a statement about
+     how many disks you have. See the Troubleshooting entry "installer does not see the disk" for
+     the full explanation and the *safe* switch procedure (changing it carelessly stops Windows
+     from booting). Best handled there.
+5. *Secure Boot may remain enabled* --- Debian's signed shim supports it. Only disable it if you
+   later install unsigned third-party kernel modules.
+6. Use the one-time boot menu (=F12= on Dell, =F9= on HP) to boot from the USB, choosing the
+   *UEFI* entry for the USB device.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 5 -- Install Debian 13 Alongside Windows" :anchor "" :extraInfo "Debian installer -- partitioning"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 5 -- Install Debian 13 Alongside Windows:* |]]  Debian installer -- partitioning  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+1. Boot the installer and choose *Graphical install*.
+2. Work through language, locale, keyboard, hostname, network, and user/password screens.
+   - You may see a prompt that *"your hardware requires non-free drivers/firmware"* offering to
+     load them from removable media. This is about device *firmware* blobs (typically Wi-Fi, wired
+     NIC, or GPU microcode) --- it is *not* related to the disk-not-seen / VMD issue, and the
+     proprietary NVIDIA driver is *not* installed here (that comes later, post-install). It is safe
+     to answer *No* and add firmware afterwards from the =non-free-firmware= repository; the only
+     consequence is that the affected device (often Wi-Fi) may not work until you do. The prompt
+     usually names the firmware file it wants --- note it if you want to know which device.
+3. At *Partition disks*, the safest choice is
+   *Guided - use the largest continuous free space* --- this targets the unallocated space created
+   in Step 2 and leaves the Windows partitions untouched.
+   - For a custom layout, choose *Manual* and create, inside the free space: a root =/= (ext4),
+     optional separate =/home=, and swap (or a swap file).
+   - *Reuse the existing EFI System Partition* (the ~100--500 MB FAT32 "EFI" partition Windows
+     created). Set its mount point to =/boot/efi= but *do NOT reformat it*.
+4. *Never choose "Guided - use entire disk"* --- that erases Windows.
+5. Before writing changes, *review the partition summary* and confirm the existing Windows
+   partitions (the large NTFS one and the EFI/recovery partitions) are still present and unchanged.
+6. When prompted to install the *GRUB boot loader*, install it to the primary disk
+   (e.g. =/dev/sda=, not a partition). The installer detects Windows via the EFI partition.
+7. Finish the install and reboot, removing the USB stick.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 6 -- First Boot, GRUB and os-prober" :anchor "" :extraInfo "Bootloader -- detect Windows"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 6 -- First Boot, GRUB and os-prober:* |]]  Bootloader -- detect Windows  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+On reboot, the *GRUB menu* should appear listing Debian and "Windows Boot Manager".
+
+If Windows is *missing* from the GRUB menu, boot into Debian and enable OS detection. Debian
+disables =os-prober= by default (a security hardening), so re-enable it and regenerate GRUB:
+
+#+begin_example
+sudo apt install os-prober
+echo 'GRUB_DISABLE_OS_PROBER=false' | sudo tee -a /etc/default/grub
+sudo os-prober          # should report the Windows installation
+sudo update-grub        # regenerates the menu, now including Windows
+#+end_example
+
+Reboot and confirm both entries appear.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Step 7 -- Post-Install Checks and Tips" :anchor "" :extraInfo "Clock -- updates"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Step 7 -- Post-Install Checks and Tips:* |]]  Clock -- updates  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- *Clock skew between OSes.* Windows stores local time in the hardware clock (RTC); Linux uses UTC.
+  After dual-booting they will disagree. Simplest fix --- tell Linux to use local-time RTC:
+
+#+begin_example
+timedatectl set-local-rtc 1 --adjust-system-clock
+#+end_example
+
+  (Alternatively, configure Windows to treat the RTC as UTC via a registry change.)
+
+- *Update Debian:*
+
+#+begin_example
+sudo apt update && sudo apt full-upgrade
+#+end_example
+
+- *Re-enable BitLocker* in Windows if you suspended it in Step 1.
+- *Windows may ask you to set a new Hello PIN* on the first boot after the dual-boot setup --- this
+  is expected. The Hello PIN unlocks a key that is *sealed in the TPM and bound to the measured
+  boot state* (the firmware settings and the boot chain that run before Windows). The dual-boot work
+  changed that state in two ways --- the *RAID On -> AHCI* switch, and the new *GRUB* bootloader now
+  running ahead of Windows --- so the TPM would not release the old key and Windows had you
+  re-establish the PIN (which re-seals it to the new state). It is a one-time event and not a
+  security problem; the same mechanism is why BitLocker would have demanded its recovery key (see
+  Step 1.3). It will only recur if you again change the firmware storage mode, Secure Boot, or the
+  boot chain.
+- Boot into each OS a couple of times to confirm both are stable.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Troubleshooting" :anchor "" :extraInfo "Common dual-boot issues"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Troubleshooting:* |]]  Common dual-boot issues  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+- *Machine boots straight into Windows, no GRUB menu.* In UEFI setup, move the =debian= entry
+  above "Windows Boot Manager" in the boot order. From Debian you can also reorder with:
+
+#+begin_example
+sudo efibootmgr                       # list boot entries and current order
+sudo efibootmgr -o 0001,0000          # set desired order (use your debian entry number first)
+#+end_example
+
+- *A Windows update reset the boot order.* Re-select =debian= first in UEFI boot order; major
+  Windows updates occasionally reassert "Windows Boot Manager".
+- *BitLocker recovery prompt at first boot.* Enter the recovery key from your Microsoft account.
+  Suspending BitLocker beforehand (Step 1.3) avoids this.
+- *Not enough space could be freed in Step 2.* Disable hibernation (=powercfg /h off=) and the
+  page file, reboot, defragment, then retry the shrink.
+- *The Debian installer does not see the disk at the partitioning phase* (common on recent Dell,
+  and other Intel-based machines).
+
+  /Why this happens:/ the storage controller is in *RAID On* mode, which is Intel's *RST (Rapid
+  Storage Technology)* turning on *VMD (Volume Management Device)*. VMD is a feature in the Intel
+  CPU that hides the NVMe SSD *behind* an integrated controller instead of exposing it directly on
+  the PCIe bus --- so an OS needs a VMD-aware driver to reach the disk. This is a controller *mode*,
+  not a RAID array: *a single NVMe SSD with no array is still affected.* Windows sees the disk
+  because Dell ships the Intel RST/VMD driver preinstalled; the stock Debian installer does not load
+  it, so the disk is invisible. Switching the controller to *AHCI* removes the VMD layer and the
+  drive then appears as a standard NVMe device that every modern OS detects natively.
+
+  /Caution:/ Windows was installed while the disk was behind VMD, so its boot config loads the VMD
+  driver early. Switching to AHCI without preparing Windows first makes it fail to boot with
+  =INACCESSIBLE_BOOT_DEVICE=. The Safe Mode step below forces Windows to load and enable the generic
+  AHCI/NVMe driver, after which it boots fine in AHCI. Safe sequence:
+  1. Cancel the installer and boot back into Windows.
+  2. In an elevated PowerShell, arm a one-time Safe Mode boot:
+
+#+begin_example
+bcdedit /set "{current}" safeboot minimal
+#+end_example
+
+     - ={current}= is a *BCD (Boot Configuration Data) identifier* meaning "the boot entry for the
+       OS you are running right now" --- so this sets the flag on this Windows install. (Other
+       well-known aliases: ={default}=, ={bootmgr}=.) The quotes are needed *in PowerShell* because
+       ={ }= denote a script block there; in classic =cmd.exe= you can drop them.
+  3. Reboot into the BIOS (Dell: =F2= or =F12=), change *SATA Operation* from *RAID On* to *AHCI*
+     (and disable *VMD* if present), save and exit.
+  4. Windows boots into Safe Mode (now using the AHCI driver). Open an elevated prompt and clear the
+     Safe Mode flag:
+
+#+begin_example
+bcdedit /deletevalue "{current}" safeboot
+#+end_example
+
+     - *Safe Mode caveat:* *Windows Terminal* (=wt.exe=, the "Terminal (Admin)" entry) is a packaged
+       Store app and does *not* launch in Safe Mode --- it errors with "this media is write
+       protected". Use the classic =cmd.exe= instead: press =Ctrl+Shift+Esc= (Task Manager) ->
+       *Run new task* -> type =cmd= -> tick *Create this task with administrative privileges* -> OK.
+       In =cmd.exe= the command needs no quotes: =bcdedit /deletevalue {current} safeboot=.
+  5. Reboot normally and confirm Windows works in AHCI mode. (Windows may ask you to set a new Hello
+     PIN here --- see Step 7; that is the TPM re-sealing to the changed boot state, and is normal.)
+  6. Restart the Debian installer --- the disk is now visible.
+  - Bail-out: setting *SATA Operation* back to *RAID On* immediately restores the original Windows boot.
+- *GRUB damaged / unbootable.* Boot a Debian live/installer USB in rescue mode, mount the root and
+  EFI partitions, =chroot=, and run =grub-install= + =update-grub=.
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:dualBoot-Win11-Deb13
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

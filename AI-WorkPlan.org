@@ -1,0 +1,133 @@
+#+title: Capabilities Improvement for airflow.here --- Work Plan
+#+DATE: <2026-06-10 Wed 13:54>
+#+AUTHOR: Mohsen BANAN
+#+OPTIONS: toc:4
+#+TAGS: me(m) ai(a)
+
+This Work Plan file drives the AI collaborative development.
+Interactions are broken down into "Stages". Each Stage has a set
+of TODOs that I work with Claude to accomplish.
+
+Companion docs: [[file:AI-AGENTS.org][AI-AGENTS.org]] (agent guidance / layering), [[file:README.org][README.org]] (overview).
+
+* Stage 1:
+
+Goal: Create a blee-panel for installing a dual boot Windows-11 and Debian-13
+
+
+* Stage 1 TODOs
+** +
+** DONE [#A] <<Look>> at all the blee panels under /bisos/git/auth/bxRepos/blee-binders/bisos-periphery :ai:
+CLOSED: [2026-06-28 Sun 19:22] SCHEDULED: <2026-06-28 Sun 15:22>
+And understand the structure.
+----- AI Results: ------
+
+*** Panels examined
+- =/_nodeBase_/= (repo root: =panels/bisos-periphery=)
+- =android/=, =chromeBook/=, =cygwin/=, =imaging/=, =printing/= (leaf branches)
+- =microsoftWindows/= (branch w/ descendents) and =microsoftWindows/outlook/= (the
+  one content-rich example), =microsoftWindows/dualBoot-Win11-Deb13/= (new, near-empty)
+- Reference example outside repo: =/bisos/panels/bisos-core/_nodeBase_/fullUsagePanel-en.org=
+
+*** File location convention
+- Every panel lives at =<node>/_nodeBase_/fullUsagePanel-en.org=.
+- The git working tree (=/bisos/git/auth/bxRepos/blee-binders/bisos-periphery/...=) is
+  surfaced under =/bisos/panels/bisos-periphery/...= (a symlink/overlay). Panels
+  reference BOTH paths: =This File::= uses the =/bisos/panels/= path, and a
+  =/file-truename:/= line gives the real git-tree path.
+- Directory nesting = the panel hierarchy (parent / descendents / siblings / ancestors).
+
+*** Anatomy --- everything is a Dynamic Block (=####+BEGIN: <type> ... ####+END=)
+In order, each panel contains:
+ 1. =bxPanel:common/title-plus= --- =#+title:= (node path), =#+roam_tags: branch=,
+    =#+roam_key:=, and a =[[roam:...]]= link to the parent.
+ 2. =blee:bxPanel:topPanelControls= --- standard control/RipGrep/Maintenance bar;
+    includes =This File ::= (panels path) and a =/file-truename:/= (git-tree path).
+ 3. =blee:bxPanel:title= (=:title "auto"=) --- the FPF/ByStar banner with =~Node:: <parent> -- <leaf>~=.
+ 4. =blee:bxPanel:terseTreeNavigator= --- auto-generated Decedents / Siblings / Ancestors nav links.
+ 5. =blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"= ---
+    the first content section; placeholder body is "Overview Comes Here."
+ 6. (content) additional =foldingSection= blocks for the actual material, optionally
+    with =:extraInfo= (a short right-margin tag like "Howto"). Runnable steps use
+    =blee:bxPanel:runResult :command "..."= blocks (see outlook for working examples).
+ 7. =blee:bxPanel:separator=
+ 8. =blee:bxPanel:evolution= + =foldingSection "Notes, Ideas, Tasks, Agenda"= (holds
+    =*** TODO= items) + =blee:bxPanel:evolutionMaintainers= (Problem Report / Maintainers).
+ 9. =blee:bxPanel:footerPanelControls=, =footerOrgParams= (STARTUP/SEQ_TODO/TAGS/=#+CATEGORY: N:<leaf>=),
+    and =footerEmacsParams= (the Local Variables block).
+
+*** Key observations for authoring new panels
+- Panels are NOT hand-written from scratch --- the dblocks are generated/refreshed in
+  emacs ("Update Buf Dblocks"). A human authors only (a) the content inside
+  =foldingSection= bodies and (b) the section =:title=/=:extraInfo= attributes.
+- The =dualBoot-Win11-Deb13= stub already has all scaffolding correct; its Overview
+  section title is "Overview and Use Cases" and it is tagged =/::Blank Starting Point::/=.
+  Filling it = adding new =foldingSection= (and =runResult=) blocks for the actual
+  dual-boot steps, mirroring the =outlook= panel's pattern.
+- =outlook= is the best in-repo template for instructional content (sectioned howtos
+  + runnable =readpst=/=apt= commands).
+** DONE [#A] Create a starting point blee-panel for the <<dual boot instructions>>
+CLOSED: [2026-06-28 Sun 19:36] SCHEDULED: <2026-06-28 Sun 15:22>
+at: /bisos/git/auth/bxRepos/blee-binders/bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_/fullUsagePanel-en.org
+based on your knowledge of how to install a dual boot win11 and deb13.
+----- AI Results: ------
+
+Authored the content of the =dualBoot-Win11-Deb13= panel. All generated dblock
+scaffolding (title/control/nav/evolution/footers) was left untouched; only
+=foldingSection= bodies were added.
+
+*** Decisions confirmed with Mohsen
+- Scenario :: Windows 11 already installed; add Debian 13 alongside it.
+- Disk     :: single disk --- shrink Windows, install Debian into the freed space.
+- Depth    :: practical, end-to-end draft (a starting point to verify/refine).
+- Commands :: plain =#+begin_example= blocks (run on the target machine), not =runResult= dblocks.
+- Defaults :: UEFI firmware, Secure Boot left ON, TPM 2.0 present.
+
+*** Sections added (each a =foldingSection :outLevel 1= with an =:extraInfo= tag)
+- Overview and Use Cases (body filled; extraInfo updated from "Blank Starting Point")
+- Prerequisites and Assumptions
+- Step 0 -- Back Up Everything First
+- Step 1 -- Prepare Windows 11 (Fast Startup off, suspend BitLocker, hibernation off)
+- Step 2 -- Shrink the Windows Partition (Disk Management)
+- Step 3 -- Create the Debian 13 Installer USB (download, verify, write)
+- Step 4 -- Firmware / UEFI Settings (boot order, Secure Boot)
+- Step 5 -- Install Debian 13 Alongside Windows (guided free-space install; reuse, don't reformat, the EFI partition)
+- Step 6 -- First Boot, GRUB and os-prober (GRUB_DISABLE_OS_PROBER=false)
+- Step 7 -- Post-Install Checks and Tips (RTC clock skew, updates, re-enable BitLocker)
+- Troubleshooting (boot order, BitLocker prompt, shrink limits, GRUB repair)
+
+*** Notes / open items for Mohsen
+- This is a starting-point draft --- verify steps against real hardware before relying on it.
+- In emacs, run "Update Buf Dblocks" so the nav/footers regenerate cleanly around the new content.
+- Debian 13 ISO filename is shown as =debian-13.x.0-amd64-netinst.iso= (a placeholder) --- adjust to
+  the actual point-release filename when used.
+** DONE [#A] <<Update to dual boot instructions>> :ai:
+CLOSED: [2026-06-28 Sun 22:54] SCHEDULED: <2026-06-28 Sun 15:22>
+at: /bisos/git/auth/bxRepos/blee-binders/bisos-periphery/microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_/fullUsagePanel-en.org
+Make the following updates:
+- Explain briefly what TPM 2.0 is
+- Briefly explain What Bitlocker is
+- Briefly describe how you get an elevated Powershell. No need to give the option of command prompt. Say explicitly one thing when possible.
+- In Setp 2. Mention what is the disk size requirement for a MINIMAL Windows 11. Suggest that Windows 11 be of that size.
+----- AI Results: ------
+
+Requested edits done: TPM 2.0 and BitLocker defined; elevated PowerShell = Start ->
+Terminal (Admin); Step 2 notes the 64 GB Windows 11 minimum and suggests sizing to it.
+
+Further fixes from a real end-to-end run (Dell desktop, single 2 TB NVMe) --- all verified working:
+- BitLocker on Home: =manage-bde= fails =0x8031005a=; turn off Device Encryption in Settings instead.
+- Step 4: added explicit Windows shutdown; Dell =F12= / HP =F9= boot keys; tap repeatedly.
+- Disk invisible in installer = RAID On / Intel RST+VMD (a controller mode, not an array); safe
+  RAID->AHCI switch via Windows Safe Mode (=bcdedit safeboot=).
+- Safe Mode: =wt.exe= won't launch; use =cmd.exe= via Task Manager.
+- Clarified the installer's non-free-firmware prompt is unrelated to the disk/VMD issue.
+- Explained ={current}= BCD identifier and the one-time Hello-PIN reset (TPM re-seal).
+
+Outcome: GRUB shows both OSes; both boot cleanly.
+** -
+
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local org-log-done 'time)
+# End:

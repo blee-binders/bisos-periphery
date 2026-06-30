@@ -1,0 +1,29 @@
+#+title: Development Status & Continuation Handoff
+#+TAGS: me(m) ai(a)
+
+This file is a working-state handoff so development can continue on another
+machine (which has this repo but NOT the developer's =~=). It captures the
+architecture, what works, what is untested and the design decisions made so far.
+
+This file is to be maintained by Claude. When a release is being made, claude should be
+prompted to update this document.
+
+Companion docs: [[file:AI-AGENTS.org][AI-AGENTS.org]] (agent guidance / layering), [[file:README.org][README.org]] (overview).
+
+* Current State
+
+Stage 1 (dual-boot Win11 + Deb13 blee-panel) complete.
+
+- Panel: =microsoftWindows/dualBoot-Win11-Deb13/_nodeBase_/fullUsagePanel-en.org=
+  --- content authored as =foldingSection= bodies; generated dblock scaffolding untouched.
+- Covers: Win11 already installed, single disk, shrink-and-add-Debian, UEFI + Secure Boot ON.
+- Steps 0--7 plus Troubleshooting. Commands as plain =#+begin_example= blocks.
+- *Verified end-to-end* on a Dell desktop (single 2 TB NVMe): RAID On -> AHCI switch, install,
+  GRUB dual menu, both OSes boot. Key gotchas captured in Troubleshooting (VMD, Safe Mode
+  =cmd.exe=, non-free-firmware prompt, Hello-PIN/TPM re-seal).
+- TODO for Mohsen: in emacs run "Update Buf Dblocks"; replace placeholder ISO filename
+  =debian-13.x.0-amd64-netinst.iso= with the real point release.
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# End:

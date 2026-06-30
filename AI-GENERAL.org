@@ -1,0 +1,33 @@
+#+title: AI Agents Guidance for bisos.newPkg
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+* Table of Contents     :TOC:
+- [[#general-this-repo-is-part-of-blee-binders-github-organization-httpsgithubcomblee-binders][General: This Repo is Part of blee-binders github organization https://github.com/blee-binders]]
+- [[#general-about-blee-panels][General: About Blee-Panels]]
+- [[#git-commits-and-git-pushes][Git Commits and Git Pushes]]
+- [[#an-example-of-a-blee-panel][An example of a Blee Panel]]
+
+* General: This Repo is Part of blee-binders github organization https://github.com/blee-binders
+
+All repos under blee-binders contain blee-panels
+
+
+* General: About Blee-Panels
+
+Blee-Panels are hierarchical org-files that form a web of information
+primarily about BISOS, Blee and the ByStar Digital Ecosystem.
+
+Blee-Panels  have a common structure.
+This structure takes the form of a series of org-mode Dynamic Blocks.
+
+
+* Git Commits and Git Pushes
+
+I don't want Claude to suggest me to prompt me:  "commit this" or "push this".
+I want to do all the commits and pushes myself.
+Instead just suggest that I myself can commit.
+
+* An example of a Blee Panel
+
+@/bisos/panels/bisos-core/_nodeBase_/fullUsagePanel-en.org
